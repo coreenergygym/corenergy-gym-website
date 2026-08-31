@@ -40,6 +40,21 @@ export interface ServiceItem {
   sort_order: number
 }
 
+export interface Member {
+  id: string
+  created_at: string
+  registration_id: string | null
+  full_name: string
+  phone: string
+  email: string | null
+  membership_id: string | null
+  membership_name: string | null
+  status: MemberStatus
+  start_date: string | null
+  end_date: string | null
+  notes: string | null
+}
+
 export interface Registration {
   id: string
   created_at: string
